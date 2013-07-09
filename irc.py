@@ -17,7 +17,7 @@ class RawMessage:
     def __str__(self):
         return 'RAW %s %s %s %s' % (self.command, self.prefix, self.params,
                                     self.trail)
- 
+
     @staticmethod
     def parse(data):
         if data['command'].isdigit():
